@@ -22,6 +22,7 @@
 | `simulacion/` | Parte 2 en local: `balanceador.js` (Load Balancer) y `prueba.ps1` (levanta las VMs, el balanceador, lanza newman y mide CPU) |
 | `results/simulacion/` | Reportes de newman, CPU por VM y bitácora del balanceador de cada prueba local |
 | `images/resultados/` | Gráficas y capturas |
+| `video/` | Video del laboratorio sin voz (`lab9_video.mp4`), guion para 2 voces con tiempos (`GUION.md`, `guion.srt`) y el script que lo genera (`generar_video.py`) |
 
 ---
 
