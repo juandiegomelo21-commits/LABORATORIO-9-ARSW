@@ -1,0 +1,87 @@
+Balanceador escuchando en :8090 -> pool [VM1@3101]
+18:07:02 GET /fibonacci/6 -> VM1
+18:07:02 /fibonacci/6 <- VM1 200 0.1s
+18:07:13 GET /fibonacci/1000000 -> VM1
+18:07:13 GET /fibonacci/1000000 -> VM1
+18:07:15 GET /fibonacci/1000000 -> VM1
+18:07:15 GET /fibonacci/1000000 -> VM1
+18:07:25 [probe] VM1 NO responde al probe -> fuera del pool
+18:07:31 /fibonacci/1000000 <- VM1 200 17.7s
+18:07:31 GET /fibonacci/1000000 -> VM1
+18:07:42 /fibonacci/1000000 <- VM1 200 28.1s
+18:07:42 GET /fibonacci/1000000 -> VM1
+18:07:52 /fibonacci/1000000 <- VM1 200 37.5s
+18:07:52 GET /fibonacci/1000000 -> VM1
+18:08:02 /fibonacci/1000000 <- VM1 200 47.8s
+18:08:03 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:08:03 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:08:03 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:08:03 [probe] VM1 vuelve a estar SANO
+18:08:03 GET /fibonacci/1000000 -> VM1
+18:08:03 GET /fibonacci/1000000 -> VM1
+18:08:03 GET /fibonacci/1000000 -> VM1
+18:08:03 GET /fibonacci/1000000 -> VM1
+18:08:13 /fibonacci/1000000 <- VM1 200 10.2s
+18:08:13 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:08:13 GET /fibonacci/1000000 -> VM1
+18:08:13 GET /fibonacci/1000000 -> VM1
+18:08:15 [probe] VM1 NO responde al probe -> fuera del pool
+18:08:23 /fibonacci/1000000 <- VM1 200 20.6s
+18:08:23 GET /fibonacci/1000000 -> VM1
+18:08:33 /fibonacci/1000000 <- VM1 200 30.7s
+18:08:33 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:08:33 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:08:34 GET /fibonacci/1000000 -> VM1
+18:08:34 GET /fibonacci/1000000 -> VM1
+18:08:34 GET /fibonacci/1000000 -> VM1
+18:08:44 /fibonacci/1000000 <- VM1 200 30.7s
+18:08:44 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:08:44 GET /fibonacci/1000000 -> VM1
+18:08:44 GET /fibonacci/1000000 -> VM1
+18:08:54 /fibonacci/1000000 <- VM1 200 20.2s
+18:08:54 GET /fibonacci/1000000 -> VM1
+18:09:04 /fibonacci/1000000 <- VM1 200 30.5s
+18:09:04 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:09:04 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:09:04 GET /fibonacci/1000000 -> VM1
+18:09:04 GET /fibonacci/1000000 -> VM1
+18:09:04 GET /fibonacci/1000000 -> VM1
+18:09:16 /fibonacci/1000000 <- VM1 200 32.0s
+18:09:16 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:09:16 GET /fibonacci/1000000 -> VM1
+18:09:16 GET /fibonacci/1000000 -> VM1
+18:09:28 /fibonacci/1000000 <- VM1 200 24.2s
+18:09:28 GET /fibonacci/1000000 -> VM1
+18:09:40 /fibonacci/1000000 <- VM1 200 35.8s
+18:09:40 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:09:40 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:09:40 GET /fibonacci/1000000 -> VM1
+18:09:40 GET /fibonacci/1000000 -> VM1
+18:09:40 GET /fibonacci/1000000 -> VM1
+18:09:52 /fibonacci/1000000 <- VM1 200 36.5s
+18:09:52 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:09:52 GET /fibonacci/1000000 -> VM1
+18:09:53 GET /fibonacci/1000000 -> VM1
+18:10:04 /fibonacci/1000000 <- VM1 200 24.1s
+18:10:04 GET /fibonacci/1000000 -> VM1
+18:10:16 /fibonacci/1000000 <- VM1 200 35.7s
+18:10:16 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:10:16 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:10:16 GET /fibonacci/1000000 -> VM1
+18:10:16 GET /fibonacci/1000000 -> VM1
+18:10:16 GET /fibonacci/1000000 -> VM1
+18:10:28 /fibonacci/1000000 <- VM1 200 35.0s
+18:10:28 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:10:28 GET /fibonacci/1000000 -> VM1
+18:10:28 GET /fibonacci/1000000 -> VM1
+18:10:38 /fibonacci/1000000 <- VM1 200 22.1s
+18:10:51 /fibonacci/1000000 <- VM1 200 35.0s
+18:10:51 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:10:51 GET /fibonacci/1000000 -> VM1
+18:11:06 /fibonacci/1000000 <- VM1 200 38.8s
+18:11:06 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:11:06 [probe] VM1 vuelve a estar SANO
+18:11:07 GET /fibonacci/1000000 -> VM1
+18:11:07 GET /fibonacci/1000000 -> VM1
+18:11:18 /fibonacci/1000000 <- VM1 200 11.7s
+18:11:18 /fibonacci/1000000 xx VM1 read ECONNRESET

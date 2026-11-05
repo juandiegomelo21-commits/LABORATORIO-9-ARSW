@@ -1,0 +1,29 @@
+{
+    "value":  [
+                  {
+                      "name":  "VM1",
+                      "port":  3101,
+                      "healthy":  true,
+                      "enviadas":  6,
+                      "ok":  6,
+                      "errores":  0
+                  },
+                  {
+                      "name":  "VM2",
+                      "port":  3102,
+                      "healthy":  true,
+                      "enviadas":  7,
+                      "ok":  7,
+                      "errores":  0
+                  },
+                  {
+                      "name":  "VM3",
+                      "port":  3103,
+                      "healthy":  true,
+                      "enviadas":  8,
+                      "ok":  8,
+                      "errores":  0
+                  }
+              ],
+    "Count":  3
+}

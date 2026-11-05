@@ -1,0 +1,81 @@
+newman
+
+ARSW_LOAD-BALANCING_AZURE
+
+Iteration 1/10
+
+→ fibonacci
+  GET http://127.0.0.1:8090/fibonacci/1000000 [200 OK, 209.25kB, 17.6s]
+
+Iteration 2/10
+
+→ fibonacci
+  GET http://127.0.0.1:8090/fibonacci/1000000 [200 OK, 209.25kB, 18.7s]
+
+Iteration 3/10
+
+→ fibonacci
+  GET http://127.0.0.1:8090/fibonacci/1000000 [200 OK, 209.25kB, 13s]
+
+Iteration 4/10
+
+→ fibonacci
+  GET http://127.0.0.1:8090/fibonacci/1000000 [200 OK, 209.25kB, 15.8s]
+
+Iteration 5/10
+
+→ fibonacci
+  GET http://127.0.0.1:8090/fibonacci/1000000 [200 OK, 209.25kB, 14.1s]
+
+Iteration 6/10
+
+→ fibonacci
+  GET http://127.0.0.1:8090/fibonacci/1000000 [200 OK, 209.25kB, 13.6s]
+
+Iteration 7/10
+
+→ fibonacci
+  GET http://127.0.0.1:8090/fibonacci/1000000 [200 OK, 209.25kB, 15.7s]
+
+Iteration 8/10
+
+→ fibonacci
+  GET http://127.0.0.1:8090/fibonacci/1000000 [200 OK, 209.25kB, 15.2s]
+
+Iteration 9/10
+
+→ fibonacci
+  GET http://127.0.0.1:8090/fibonacci/1000000 [200 OK, 209.25kB, 18.2s]
+
+Iteration 10/10
+
+→ fibonacci
+  GET http://127.0.0.1:8090/fibonacci/1000000 [errored]
+     socket hang up
+
+┌─────────────────────────┬────────────────────┬────────────────────┐
+│                         │           executed │             failed │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│              iterations │                 10 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│                requests │                 10 │                  1 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│            test-scripts │                 10 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│      prerequest-scripts │                  0 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│              assertions │                  0 │                  0 │
+├─────────────────────────┴────────────────────┴────────────────────┤
+│ total run duration: 2m 38s                                        │
+├───────────────────────────────────────────────────────────────────┤
+│ total data received: 1.88MB (approx)                              │
+├───────────────────────────────────────────────────────────────────┤
+│ average response time: 15.8s [min: 13s, max: 18.7s, s.d.: 1918ms] │
+└───────────────────────────────────────────────────────────────────┘
+
+[31m  # [39m[31m failure       [39m[31m detail         [39m
+[90m    [39m[90m               [39m[90m                [39m
+ 1.  Error                         
+     iteration: 10  socket hang up 
+                    at request     
+                    inside ""      

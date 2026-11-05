@@ -1,0 +1,91 @@
+Balanceador escuchando en :8090 -> pool [VM1@3101]
+18:00:25 GET /fibonacci/6 -> VM1
+18:00:25 /fibonacci/6 <- VM1 200 0.1s
+18:00:33 GET /fibonacci/1000000 -> VM1
+18:00:33 GET /fibonacci/1000000 -> VM1
+18:00:33 GET /fibonacci/1000000 -> VM1
+18:00:33 GET /fibonacci/1000000 -> VM1
+18:00:43 [probe] VM1 NO responde al probe -> fuera del pool
+18:00:59 /fibonacci/1000000 <- VM1 200 25.5s
+18:00:59 GET /fibonacci/1000000 -> VM1
+18:01:20 /fibonacci/1000000 <- VM1 200 46.5s
+18:01:20 GET /fibonacci/1000000 -> VM1
+18:01:36 /fibonacci/1000000 <- VM1 200 62.8s
+18:01:36 GET /fibonacci/1000000 -> VM1
+18:01:53 /fibonacci/1000000 <- VM1 200 80.1s
+18:01:53 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:01:53 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:01:53 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:01:53 [probe] VM1 vuelve a estar SANO
+18:01:54 GET /fibonacci/1000000 -> VM1
+18:01:54 GET /fibonacci/1000000 -> VM1
+18:01:54 GET /fibonacci/1000000 -> VM1
+18:01:54 GET /fibonacci/1000000 -> VM1
+18:02:08 [probe] VM1 NO responde al probe -> fuera del pool
+18:02:09 /fibonacci/1000000 <- VM1 200 15.3s
+18:02:09 GET /fibonacci/1000000 -> VM1
+18:02:23 /fibonacci/1000000 <- VM1 200 29.5s
+18:02:23 GET /fibonacci/1000000 -> VM1
+18:02:36 /fibonacci/1000000 <- VM1 200 42.8s
+18:02:36 GET /fibonacci/1000000 -> VM1
+18:02:47 /fibonacci/1000000 <- VM1 200 53.9s
+18:02:47 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:02:47 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:02:47 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:02:47 [probe] VM1 vuelve a estar SANO
+18:02:48 GET /fibonacci/1000000 -> VM1
+18:02:48 GET /fibonacci/1000000 -> VM1
+18:02:48 GET /fibonacci/1000000 -> VM1
+18:02:48 GET /fibonacci/1000000 -> VM1
+18:02:58 /fibonacci/1000000 <- VM1 200 10.5s
+18:02:58 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:02:58 GET /fibonacci/1000000 -> VM1
+18:02:58 GET /fibonacci/1000000 -> VM1
+18:02:59 [probe] VM1 NO responde al probe -> fuera del pool
+18:03:09 /fibonacci/1000000 <- VM1 200 21.3s
+18:03:09 GET /fibonacci/1000000 -> VM1
+18:03:24 /fibonacci/1000000 <- VM1 200 36.6s
+18:03:24 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:03:24 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:03:24 GET /fibonacci/1000000 -> VM1
+18:03:24 GET /fibonacci/1000000 -> VM1
+18:03:24 GET /fibonacci/1000000 -> VM1
+18:03:42 /fibonacci/1000000 <- VM1 200 44.0s
+18:03:42 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:03:42 GET /fibonacci/1000000 -> VM1
+18:03:42 GET /fibonacci/1000000 -> VM1
+18:04:02 /fibonacci/1000000 <- VM1 200 37.3s
+18:04:02 GET /fibonacci/1000000 -> VM1
+18:04:22 /fibonacci/1000000 <- VM1 200 57.4s
+18:04:22 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:04:22 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:04:22 GET /fibonacci/1000000 -> VM1
+18:04:22 GET /fibonacci/1000000 -> VM1
+18:04:22 GET /fibonacci/1000000 -> VM1
+18:04:40 /fibonacci/1000000 <- VM1 200 57.6s
+18:04:40 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:04:40 GET /fibonacci/1000000 -> VM1
+18:04:40 GET /fibonacci/1000000 -> VM1
+18:04:59 /fibonacci/1000000 <- VM1 200 37.4s
+18:04:59 GET /fibonacci/1000000 -> VM1
+18:05:20 /fibonacci/1000000 <- VM1 200 58.2s
+18:05:20 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:05:20 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:05:20 GET /fibonacci/1000000 -> VM1
+18:05:20 GET /fibonacci/1000000 -> VM1
+18:05:43 /fibonacci/1000000 <- VM1 200 63.4s
+18:05:43 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:05:44 GET /fibonacci/1000000 -> VM1
+18:05:44 GET /fibonacci/1000000 -> VM1
+18:06:10 /fibonacci/1000000 <- VM1 200 49.5s
+18:06:10 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:06:10 GET /fibonacci/1000000 -> VM1
+18:06:31 /fibonacci/1000000 <- VM1 200 47.7s
+18:06:31 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:06:31 [probe] VM1 vuelve a estar SANO
+18:06:31 GET /fibonacci/1000000 -> VM1
+18:06:31 GET /fibonacci/1000000 -> VM1
+18:06:44 [probe] VM1 NO responde al probe -> fuera del pool
+18:06:51 /fibonacci/1000000 <- VM1 200 19.5s
+18:06:51 /fibonacci/1000000 xx VM1 read ECONNRESET
+18:06:51 [probe] VM1 vuelve a estar SANO

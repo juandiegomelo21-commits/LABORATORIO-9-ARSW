@@ -1,0 +1,70 @@
+EVIDENCIA DE LA INFRAESTRUCTURA CREADA EN AZURE — Parte 2
+Capturada el 2026-11-05T17:45:38Z con Azure CLI (lecturas).
+Suscripcion: Azure for Students (de1c9ae7-6056-4335-af0e-9c5bde1f083d)
+
+=========== RECURSOS DEL GRUPO LOAD_BALANCING_LAB ===========
+Nombre                                         Tipo                                     Region
+---------------------------------------------  ---------------------------------------  ------------
+lab-vnet                                       Microsoft.Network/virtualNetworks        chilecentral
+lab-nsg                                        Microsoft.Network/networkSecurityGroups  chilecentral
+lb-ip                                          Microsoft.Network/publicIPAddresses      chilecentral
+lab-lb                                         Microsoft.Network/loadBalancers          chilecentral
+VM1-nic                                        Microsoft.Network/networkInterfaces      chilecentral
+VM1                                            Microsoft.Compute/virtualMachines        chilecentral
+VM1_OsDisk_1_048fcf3063c1471da2c837f24afa7af3  Microsoft.Compute/disks                  chilecentral
+VM2-nic                                        Microsoft.Network/networkInterfaces      chilecentral
+VM3-nic                                        Microsoft.Network/networkInterfaces      chilecentral
+
+=========== IP PUBLICA DEL BALANCEADOR ===========
+{
+  "Asignacion": "Static",
+  "IP": "68.211.135.252",
+  "SKU": "Standard",
+  "Zonas": [
+    "1",
+    "2",
+    "3"
+  ]
+}
+
+=========== LOAD BALANCING RULE ===========
+Nombre    Protocolo    PuertoFrontend    PuertoBackend    SesionPersistente
+--------  -----------  ----------------  ---------------  -------------------
+lb-rule   Tcp          80                3000             Default
+
+=========== HEALTH PROBE ===========
+Nombre    Protocolo    Puerto    Path    Intervalo
+--------  -----------  --------  ------  -----------
+lb-probe  Http         3000      /       15
+
+=========== BACKEND POOL ===========
+Nombre      NICs
+----------  ------
+lb-backend  3
+
+=========== VIRTUAL NETWORK Y SUBNET ===========
+{
+  "AddressSpace": [
+    "10.0.0.0/16"
+  ],
+  "Subnet": "lab-subnet",
+  "SubnetRange": "10.0.0.0/24",
+  "VNet": "lab-vnet"
+}
+
+=========== NETWORK SECURITY GROUP ===========
+Regla       Puerto    Protocolo    Acceso    Prioridad
+----------  --------  -----------  --------  -----------
+allow-ssh   22        Tcp          Allow     1000
+allow-app   3000      Tcp          Allow     1010
+allow-http  80        Tcp          Allow     1020
+
+=========== MAQUINAS VIRTUALES ===========
+Nombre    Zona    Tamano           Estado          IPPrivada
+--------  ------  ---------------  --------------  -----------
+VM1       1       Standard_DS1_v2  VM deallocated  10.0.0.4
+
+=========== NICs ASOCIADAS AL BACKEND POOL ===========
+VM1-nic    pool=lb-backend   ip=10.0.0.4
+VM2-nic    pool=lb-backend   ip=10.0.0.5
+VM3-nic    pool=lb-backend   ip=10.0.0.6

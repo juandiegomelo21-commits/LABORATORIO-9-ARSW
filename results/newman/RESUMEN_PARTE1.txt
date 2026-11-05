@@ -1,0 +1,15 @@
+prueba            total  exitosas  fallidas  tasa_exito  t_min_s  t_prom_s  t_max_s
+-------------------------------------------------------------------------------------
+p1_DS1_v2_x2      20     11        9         55%         8.7      11.24     17.05  
+p1_DS1_v2_x2_p80  20     14        6         70%         8.31     12.41     16.26  
+p1_DS1_v2_x4      40     6         34        15%         60.74    64.88     68.18  
+p1_DS1_v2_x4_p80  40     23        17        58%         8.48     24.32     39.6   
+p1_DS2_v2_x2      20     13        7         65%         8.44     11.6      16.53  
+p1_DS2_v2_x4      40     21        19        52%         8.58     23.87     39.9   
+
+  p1_DS1_v2_x2: errores -> {'ECONNRESET': 9}
+  p1_DS1_v2_x2_p80: errores -> {'ECONNRESET': 6}
+  p1_DS1_v2_x4: errores -> {'ECONNRESET': 34}
+  p1_DS1_v2_x4_p80: errores -> {'ECONNRESET': 17}
+  p1_DS2_v2_x2: errores -> {'ECONNRESET': 7}
+  p1_DS2_v2_x4: errores -> {'ECONNRESET': 19}

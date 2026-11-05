@@ -1,0 +1,95 @@
+(node:19348) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+(Use `node --trace-deprecation ...` to show where the warning was created)
+newman
+
+ARSW_LOAD-BALANCING_AZURE
+
+Iteration 1/10
+
+→ fibonacci
+  GET http://68.211.144.189/fibonacci/1000000 [200 OK, 209.24kB, 16.3s]
+
+Iteration 2/10
+
+→ fibonacci
+  GET http://68.211.144.189/fibonacci/1000000 [200 OK, 209.24kB, 16.1s]
+
+Iteration 3/10
+
+→ fibonacci
+  GET http://68.211.144.189/fibonacci/1000000 [200 OK, 209.24kB, 8.4s]
+
+Iteration 4/10
+
+→ fibonacci
+  GET http://68.211.144.189/fibonacci/1000000 [errored]
+     read ECONNRESET
+
+Iteration 5/10
+
+→ fibonacci
+  GET http://68.211.144.189/fibonacci/1000000 [200 OK, 209.24kB, 8.6s]
+
+Iteration 6/10
+
+→ fibonacci
+  GET http://68.211.144.189/fibonacci/1000000 [errored]
+     read ECONNRESET
+
+Iteration 7/10
+
+→ fibonacci
+  GET http://68.211.144.189/fibonacci/1000000 [200 OK, 209.24kB, 16.4s]
+
+Iteration 8/10
+
+→ fibonacci
+  GET http://68.211.144.189/fibonacci/1000000 [200 OK, 209.24kB, 8.5s]
+
+Iteration 9/10
+
+→ fibonacci
+  GET http://68.211.144.189/fibonacci/1000000 [errored]
+     read ECONNRESET
+
+Iteration 10/10
+
+→ fibonacci
+  GET http://68.211.144.189/fibonacci/1000000 [200 OK, 209.24kB, 8.6s]
+
+┌─────────────────────────┬────────────────────┬───────────────────┐
+│                         │           executed │            failed │
+├─────────────────────────┼────────────────────┼───────────────────┤
+│              iterations │                 10 │                 0 │
+├─────────────────────────┼────────────────────┼───────────────────┤
+│                requests │                 10 │                 3 │
+├─────────────────────────┼────────────────────┼───────────────────┤
+│            test-scripts │                 10 │                 0 │
+├─────────────────────────┼────────────────────┼───────────────────┤
+│      prerequest-scripts │                  0 │                 0 │
+├─────────────────────────┼────────────────────┼───────────────────┤
+│              assertions │                  0 │                 0 │
+├─────────────────────────┴────────────────────┴───────────────────┤
+│ total run duration: 1m 46.8s                                     │
+├──────────────────────────────────────────────────────────────────┤
+│ total data received: 1.46MB (approx)                             │
+├──────────────────────────────────────────────────────────────────┤
+│ average response time: 12.2s [min: 8.4s, max: 16.4s, s.d.: 3.8s] │
+└──────────────────────────────────────────────────────────────────┘
+
+[31m  # [39m[31m failure      [39m[31m detail          [39m
+[90m    [39m[90m              [39m[90m                 [39m
+ 1.  Error                         
+     iteration: 4  read ECONNRESET 
+                   at request      
+                   inside ""       
+[90m    [39m[90m              [39m[90m                 [39m
+ 2.  Error                         
+     iteration: 6  read ECONNRESET 
+                   at request      
+                   inside ""       
+[90m    [39m[90m              [39m[90m                 [39m
+ 3.  Error                         
+     iteration: 9  read ECONNRESET 
+                   at request      
+                   inside ""       
